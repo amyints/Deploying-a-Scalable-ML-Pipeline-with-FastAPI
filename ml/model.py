@@ -27,7 +27,6 @@ def train_model(X_train, y_train):
     model.fit(X_train, y_train)
     print("Model training complete.")
     return model
-#    pass
 
 
 def compute_model_metrics(y, preds):
@@ -69,8 +68,7 @@ def inference(model, X):
     # TODO: implement the function
     #Run model inferences and return the predictions
     preds = model.predict(X)
-#    return preds
-    pass
+    return preds
 
 def save_model(model, path):
     """ Serializes model to a file.
@@ -86,14 +84,14 @@ def save_model(model, path):
     # Serializes model to a file
     with open(path, "wb") as f:
         pickle.dump(model, f)
-    pass
+    print("Model saved.")
 
 def load_model(path):
     """ Loads pickle file from `path` and returns it."""
     # TODO: implement the function
     with open(path, "rb") as f:
         return pickle.load(f)
-    pass
+    
 
 
 def performance_on_categorical_slice(
