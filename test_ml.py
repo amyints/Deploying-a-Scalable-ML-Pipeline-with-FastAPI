@@ -1,6 +1,7 @@
 import pytest
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import fbeta_score, precision_score, recall_score, f1_score
 import pandas as pd
 import numpy as np
 from ml.data import process_data
@@ -51,7 +52,7 @@ def test_one(sample_data):
 # TODO: implement the second test. Change the function name and input as needed
 def test_two(sample_data):
     """
-    # add description for the second test
+    Test to check if the ML model uses the expected algorithm (RandomForestClassifier)
     """
     # Your code here
     
@@ -73,7 +74,20 @@ def test_two(sample_data):
 # TODO: implement the third test. Change the function name and input as needed
 def test_three():
     """
-    # add description for the third test
+    Test if the compute_model_metrics function returns the expected precision, recall, and fbeta
     """
     # Your code here
-    pass
+    y_true = [0, 1, 0, 1, 1]
+    y_pred = [0, 1, 0, 0, 1]
+
+    precision, recall, fbeta = compute_model_metrics(y_true, y_pred)
+
+    expected_fbeta = fbeta_score(y_true, y_pred, beta=1, zero_division=1)
+    expected_precision = precision_score(y_true, y_pred, zero_division=1)
+    expected_recall = recall_score(y_true, y_pred, zero_division=1)
+    
+
+    assert fbeta == expected_fbeta, f"Expected accuracy: {expected_fbeta}, but got {metrics['fbeta']}"
+    assert precision == expected_precision, f"Expected accuracy: {expected_precision}, but got {metrics['precision']}"
+    assert recall == expected_recall, f"Expected recall: {expected_recall}, but got {metrics['recall']}"
+
