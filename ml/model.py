@@ -22,10 +22,12 @@ def train_model(X_train, y_train):
     """
     # TODO: implement the function
     #train the machine learning model and return it
+    print("Training the model...")
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
-#    return model
-    pass
+    print("Model training complete.")
+    return model
+#    pass
 
 
 def compute_model_metrics(y, preds):
