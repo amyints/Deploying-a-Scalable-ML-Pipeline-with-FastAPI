@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amyint/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-1/mlruns/0/a6b3ce9e92754ca1a1b140d6275d26aa/artifacts
+end_time: 1742256821404
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a6b3ce9e92754ca1a1b140d6275d26aa
+run_name: whimsical-sponge-634
+run_uuid: a6b3ce9e92754ca1a1b140d6275d26aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256819623
+status: 4
+tags: []
+user_id: amyint

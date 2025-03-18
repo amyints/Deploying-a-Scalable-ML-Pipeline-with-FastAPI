@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amyint/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-1/mlruns/0/eaaf9ed0d1fd4c53aff9fbe77bf69614/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eaaf9ed0d1fd4c53aff9fbe77bf69614
+run_name: gentle-ram-328
+run_uuid: eaaf9ed0d1fd4c53aff9fbe77bf69614
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742257333322
+status: 1
+tags: []
+user_id: amyint

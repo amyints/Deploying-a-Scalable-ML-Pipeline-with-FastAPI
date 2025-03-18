@@ -1,0 +1,7 @@
+name: fast_api
+conda_env: environment.yml
+
+entry_points:
+    main:
+        command: >-
+            jupyter notebook
