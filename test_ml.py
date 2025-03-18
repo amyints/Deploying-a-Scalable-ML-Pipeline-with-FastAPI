@@ -85,11 +85,13 @@ def test_three():
     expected_fbeta = fbeta_score(y_true, y_pred, beta=1, zero_division=1)
     expected_precision = precision_score(y_true, y_pred, zero_division=1)
     expected_recall = recall_score(y_true, y_pred, zero_division=1)
-    
 
     assert fbeta == expected_fbeta, f"Expected accuracy: {expected_fbeta}, but got {fbeta}"
     assert precision == expected_precision, f"Expected accuracy: {expected_precision}, but got {precision}"
     assert recall == expected_recall, f"Expected recall: {expected_recall}, but got {recall}"
-
     
-
+"""
+    assert fbeta == expected_fbeta, f"Expected accuracy: {expected_fbeta}, but got {fbeta}"
+    assert precision == expected_precision, f"Expected accuracy: {expected_precision}, but got {precision}"
+    assert recall == expected_recall, f"Expected recall: {expected_recall}, but got {recall}"
+"""
